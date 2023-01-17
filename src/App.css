@@ -1,10 +1,70 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  background-color: #EAFDFC;
+}
+
+.header {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  background-color: #91D8E4;
+  width: 100%;
+  align-self: center;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+summary {
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+  padding-left: 0.1rem;
+}
+
+summary:hover {
+  cursor: pointer;
+  border: solid 2px #81d0de;
+}
+
+.card {
+  background-color: #BFEAF5;
+  padding: 0.1rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin: 0.2rem 0;
+}
+
+.paragraph {
+  text-align: justify;
+  margin: 0.2rem;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+
+.tag {
+  border: 1px solid #82AAE3;
+  padding: 0.1rem;
+  border-radius: 3px;
 }
 

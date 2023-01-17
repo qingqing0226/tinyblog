@@ -1,6 +1,7 @@
 import React from 'react';
 import { Blog } from '../types/types';
 import Card from './Card';
+import '../App.css';
 interface ISectionProps {
     blogs: Blog[],
     section: string
@@ -8,14 +9,10 @@ interface ISectionProps {
 
 let Section = ({blogs, section}: ISectionProps) => {
   return (
-    <div>
       <details>
         <summary>{section}</summary>
         {blogs.map(b => <Card blog={b} />)}
       </details>
-        
-    </div>
-    
   )
 }
 
