@@ -9,7 +9,7 @@ interface ISectionProps {
 
 let Section = ({blogs, section}: ISectionProps) => {
   return (
-      <details>
+      <details className={section}>
         <summary>{section}</summary>
         {blogs.map(b => <Card blog={b} />)}
       </details>
