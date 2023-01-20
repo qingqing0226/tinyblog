@@ -82,3 +82,37 @@ summary:hover {
   border-radius: 3px;
 }
 
+.user {
+  backdrop-filter: blur(15px);
+  background-color: #91D8E4;
+  width: 40vw;
+  min-height: 30vh;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.heading {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.author-name {
+
+}
+
+.close-button {
+  background: none;
+  margin-right: 0;
+  border: none;
+  font-size: 1.1rem;
+  color: rgb(81, 141, 161);
+}
+
+.close-button:hover {
+  color: rgb(33, 61, 71);
+}
+
+.user-details {
+  margin-top: 0.5rem;
+}
+
