@@ -14,7 +14,7 @@ const User = ({author}: IAuthorProps) => {
   const closePop = () => setOpen(false);
   return (
     <>
-    <div onClick={() => setOpen(true)}>{author.firstName + ' ' + author.lastName}</div>
+    <div onClick={() => setOpen(true)} className='author-name'>{author.firstName + ' ' + author.lastName}</div>
     <Popup
       arrow={false}
       modal nested
@@ -24,16 +24,21 @@ const User = ({author}: IAuthorProps) => {
     >
       <div className='user'>
         <div className='heading'>
-          <h3 className='author-name'>{author.firstName + ' ' + author.lastName}</h3>
+          <h3 className='name'>{author.firstName + ' ' + author.lastName}</h3>
           <button className='close-button' onClick={closePop}>X</button>
         </div>
         <hr  />
-        <div className='user-details'>
-          <p>Age: {author.age}</p>
-          <p>Email: {author.email}</p>
-          <p>Phone: {author.phone}</p>
-          <p>Birth Date: {author.birthDate}</p>
-          <p>Address: {author.address.address + ' ' + author.address.city}</p>
+        <div className='user-container'>
+          <div className='image-container'>
+            <img src={author.image} alt={author.firstName} />
+          </div>
+          <div className='user-details'>
+            <p>Age: {author.age}</p>
+            <p>Email: {author.email}</p>
+            <p>Phone: {author.phone}</p>
+            <p>Birth Date: {author.birthDate}</p>
+            <p>Address: {author.address.address + ' ' + author.address.city}</p>
+          </div>
         </div>
       </div>
     </Popup></>

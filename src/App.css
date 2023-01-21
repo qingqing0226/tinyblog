@@ -89,6 +89,7 @@ summary:hover {
   min-height: 30vh;
   padding: 0.5rem;
   border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .heading {
@@ -96,8 +97,9 @@ summary:hover {
   margin-bottom: 0.5rem;
 }
 
-.author-name {
-
+.author-name:hover {
+  cursor: pointer;
+  color: #3d747d;
 }
 
 .close-button {
@@ -112,7 +114,25 @@ summary:hover {
   color: rgb(33, 61, 71);
 }
 
-.user-details {
+.user-container {
   margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  max-width: 20vw;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  row-gap: 0.2rem;
+}
+
+.user-details > p {
+  width: 20vw;
 }
 
