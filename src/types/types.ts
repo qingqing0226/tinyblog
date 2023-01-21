@@ -24,8 +24,4 @@ export interface address {
     city: string
 }
 
-export interface BlogAuthor {
-    blog: Blog,
-    author: Author | undefined
-}
 
