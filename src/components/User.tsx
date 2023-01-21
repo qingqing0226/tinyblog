@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Author } from '../types/types';
 import '../App.css';
 import Popup from 'reactjs-popup';
-import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface IAuthorProps {
     author: Author
@@ -30,7 +28,7 @@ const User = ({author}: IAuthorProps) => {
         <hr  />
         <div className='user-container'>
           <div className='image-container'>
-            <img src={author.image} alt={author.firstName} />
+            <img src={author.image} alt={author.firstName} className='author-image' />
           </div>
           <div className='user-details'>
             <p>Age: {author.age}</p>

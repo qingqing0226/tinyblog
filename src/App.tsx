@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Section from './components/Section';
 import { Blog } from './types/types';
+import { Github } from 'react-bootstrap-icons';
 
 const sections = ['history', 'crime', 'fiction', 'magical', 'mystery'];
 
@@ -26,6 +27,9 @@ function App() {
         const blogs = allBlogs.filter(b => b.tags.includes(section));
         return <Section blogs={blogs} section={section}/>
       })}
+      <footer>
+        <a href='https://github.com/qingqing0226'><Github className='github' /><span>{' '}&#169;{'Qingqing Dai'}</span></a>
+      </footer>
     </div>
   );
 }
